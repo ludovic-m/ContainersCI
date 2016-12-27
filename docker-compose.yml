@@ -2,7 +2,8 @@ version: "2"
 
 services:
     service-a:
-        build: ./service-a
+        #build: ./service-a
+        #image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-b:${BUILD_ID_TAG}
         ports:
             - "8080:80"
         depends_on:
@@ -12,7 +13,8 @@ services:
             com.microsoft.acs.dcos.marathon.healthcheck.path: '/'
 
     service-b:
-        build: ./service-b
+        #image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-b:${BUILD_ID_TAG}
+        #build: ./service-b
         expose:
             - "80"
         labels:

@@ -2,8 +2,7 @@ version: "2"
 
 services:
     service-a:
-        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-a:latest             
-
+        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-a:${BUILD_ID_TAG}                     
     service-b:
-        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-b:latest        
-
+        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-b:${BUILD_ID_TAG}
+        
