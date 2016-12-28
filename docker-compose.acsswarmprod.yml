@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+    service-a:
+        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-a:stable                     
+    service-b:
+        image:  dmxacrmaster-microsoft.azurecr.io/absampleimage_service-b:stable
+        
