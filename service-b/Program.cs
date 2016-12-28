@@ -31,13 +31,14 @@ namespace ServiceB
                     }
                 };
 
+//mod
                 new WebHostBuilder()
                     .UseKestrel(options => {
                         options.ShutdownTimeout = TimeSpan.FromSeconds(10);
                     })
                     .UseStartup<Startup>()
                     .UseUrls("http://*:80")
-                    .Build()
+                    .Build()                    
                     .Run(cts.Token);
 
                 main.Cancel();
