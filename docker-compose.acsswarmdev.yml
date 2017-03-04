@@ -2,7 +2,6 @@ version: "2"
 
 services:
     service-a:
-        image:  acslmeregistry-on.azurecr.io/absampleimage_service-a:${BUILD_ID_TAG}                     
+        image:  acslmeregistry-on.azurecr.io/absampleimage_service-a:${BUILD_ID_TAG}
     service-b:
         image:  acslmeregistry-on.azurecr.io/absampleimage_service-b:${BUILD_ID_TAG}
-        
